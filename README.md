@@ -13,3 +13,5 @@ This repository contains all the code for the summers masters project
 **Testing**: Contains file to calculate test WER/CER and also code to produce saliency maps
 
 **Utils**: Contains miscellaneous processing functions to be used on model predictions and text
+
+To use the model only the Data,Model Modules, and Final Model files are required. However, to train and test the model, all files are required.
