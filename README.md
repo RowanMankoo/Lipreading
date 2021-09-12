@@ -10,7 +10,7 @@ This repository contains all the code for the summers masters project
 
 **Training**: Contains the curriculum and full training loops used
 
-**Testing**: Contains file to calculate test WER/CER and also code to produce saliency maps
+**Testing**: Contains file to calculate test WER/CER and also code to produce saliency maps plots and loss plots
 
 **Utils**: Contains miscellaneous processing functions to be used on model predictions and text
 
