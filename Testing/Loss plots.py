@@ -3,6 +3,7 @@ Code used to generate the plots, note that if you wish to recreate plots you nee
 """
 
 import torch
+import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 
