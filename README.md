@@ -30,6 +30,7 @@ The model proposed yields a WER of 82.26% and a CER of 71.44% on the LRS2 datase
 ## Repository Structure
 
 **Data**: Contains custom made dataset class with accompanying data loader for the LRS2 dataset
+
 **Model Modules**: Contains all modules used to build the model (3D CNN, ResNet-18, encoder-decoder)
 
 **Final Model**: Contains the final model class, load this to get the model used in the paper
