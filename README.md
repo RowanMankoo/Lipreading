@@ -1,4 +1,4 @@
-# Lipreading
+# Visual Speech recognition
 
 # Introduction
 Visual speech recognition, or more commonly known as lip reading, is the task of perceiving speech solely from the visual information of the speaker.  Speech itself is auditory in nature. Trying to perceive this through just vision alone makes this task extremely difficult, with many deaf people refusing to learn due to its extreme difficulty. Ques provided by the speaker’s mouth, teeth, tongue, and even facial muscles all help in lipreading.
