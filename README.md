@@ -25,7 +25,7 @@ Training lipreading models is very hard so to combat this some techniques are em
 The model proposed yields a WER of 82.26% and a CER of 71.44% on the LRS2 dataset. This indicates there is room for improvment in some of the modules. Below are some visualisations of the training curves and saliency maps produced by the model.
 ![loss curriculum1-4 (4)](https://user-images.githubusercontent.com/62399186/137826174-ffb55b4a-7878-4f31-8c5a-c7bf02c2b2ea.png)
 
-![Saliency maps (1)](https://user-images.githubusercontent.com/62399186/137826185-5684143f-e77c-4c84-8861-f9001c63a6ac.png)
+![Screenshot (45)](https://user-images.githubusercontent.com/62399186/137826737-047df4e0-3479-4512-9a99-0b449fa0b826.png)
 
 ## Repository Structure
 
