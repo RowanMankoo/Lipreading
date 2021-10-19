@@ -1,40 +1,35 @@
-# Visual Speech recognition
+# Visual Speech Recognition
 
-# Introduction
+## Introduction
 Visual speech recognition, or more commonly known as lip reading, is the task of perceiving speech solely from the visual information of the speaker.  Speech itself is auditory in nature. Trying to perceive this through just vision alone makes this task extremely difficult, with many deaf people refusing to learn due to its extreme difficulty. Ques provided by the speaker’s mouth, teeth, tongue, and even facial muscles all help in lipreading.
 
 
 
-# Architecture 
+## Architecture 
 This task lies at the intersection of both computer vision and NLP. As such, the system in question will be bringing together architectures from both these fields in an end-to-end neural network. The proposed architecture is shown below. This model consists of 3 stages; the 3D CNN front-end, the ResNet-18 feature extractor, and the seq2seq back-end. Implementation of this model is done in Python through the PyTorch library.
 
-# image
 ![architecture (3)](https://user-images.githubusercontent.com/62399186/137826151-0dece4b5-3a00-4e00-bc16-0fe6227b51eb.png)
 
 
-# Dataset
+## Dataset
 For the training and testing of this model, the LRS2 dataset has been used which consists of 144,482 video clips from the BBC, with each video clip being one spoken sentence. The video clips also come with audio files, but for the purposes of this study they shall not be used. Since each clip is taken directly from real world broadcasts there is a lot of natural variation in the data distribution. Training our model on LRS2 generates a lipreadiing system capible of generalising well to the real world. To access the dataset a special request must be sent to Rob Cooper at the BBC.
 
-# Training strategy
+## Training Strategy
 Training lipreading models is very hard so to combat this some techniques are employed to help training:
 1. **Teacher force ratio** is used to send the actual target token as the next input to the decoder instead of the previous prediction 
 2. **Curriculum learning** is used such that the number of words per video clip increases with the next currriculum 
 3. **Freezing of layers** is used in the middle ResNet-18 layers to speed up training
 
-# Results
+## Results
 
 The model proposed yields a WER of 82.26% and a CER of 71.44% on the LRS2 dataset. This indicates there is room for improvment in some of the modules. Below are some visualisations of the training curves and saliency maps produced by the model.
 ![loss curriculum1-4 (4)](https://user-images.githubusercontent.com/62399186/137826174-ffb55b4a-7878-4f31-8c5a-c7bf02c2b2ea.png)
 
 ![Saliency maps (1)](https://user-images.githubusercontent.com/62399186/137826185-5684143f-e77c-4c84-8861-f9001c63a6ac.png)
 
-
-
-This repository contains all the code for the summers masters project
-## File Structure
+## Repository Structure
 
 **Data**: Contains custom made dataset class with accompanying data loader for the LRS2 dataset
-
 **Model Modules**: Contains all modules used to build the model (3D CNN, ResNet-18, encoder-decoder)
 
 **Final Model**: Contains the final model class, load this to get the model used in the paper
