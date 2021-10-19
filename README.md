@@ -42,4 +42,4 @@ The model proposed yields a WER of 82.26% and a CER of 71.44% on the LRS2 datase
 
 **Utils**: Contains miscellaneous processing functions to be used on model predictions and text
 
-To use the model only the Data,Model Modules, and Final Model files are required. However, to train and test the model, all files are required.
+To use the model only the **Data**, **Model Modules**, and **Final Model** files are required. However, to train and test the model, all files are required.
